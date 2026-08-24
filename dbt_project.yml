@@ -45,8 +45,9 @@ models:
          - GRANT USAGE ON SCHEMA DBT.DBT_ANKIT_MART TO ROLE TESTER;
          - GRANT USAGE ON DATABASE DBT TO ROLE BA;
          - GRANT USAGE ON SCHEMA DBT.DBT_ANKIT_MART TO ROLE BA;
+         - "{{ create_latest_version_view() }}"
         +grants:
-            select: ['BA']
+            select: []
 
 vars:
  token_name_var: 'link'
