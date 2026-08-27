@@ -1,6 +1,6 @@
 eth:
   outputs:
-    ci:
+   ci:
       account: AZEIDNH-CZ52343
       database: CI
       private_key_path: "{{ env_var('DBT_PRIVATE_KEY_PATH') }}"
